@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/d75a9080d6.js" crossorigin="anonymous"></script>
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/debug.css">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+        }
+        .grid *  { grid-column: md; }
+        .grid-xl { grid-column: xl; }
+        .is-paddingless-horizontal { padding-left: 0; padding-right: 0;}
+    </style>
+</head>
+<body>
+    <section class="section is-paddingless-horizontal">
+        <div class="container grid">
+            <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="is-active"><a href="#" aria-current="page">How to build a 
+                        beautiful blog</a></li>
+                </ul>
+            </nav>            
+        </div>
+    </section>
+
+    <section class="section is-paddingless-horizontal" style="padding-top: 0px">
+        <div class="container grid">
+            <article class="media center">
+                <figure class="media-left">
+                    <figure class="image is-64x64">
+                        <img src="images/me2.jpg" alt="me">
+                    </figure>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>Aaron Traver</strong>
+                            <a>@travera1</a><br>
+                            <span class="has-text-grey">Self-taught, inspired to learn<br>
+                            <time datetime="2021-09-2">September 2</time> - 20 min read</span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section is-paddingless-horizontal">
+               <h1 class="title is-2">How to build a beautiful blog</h1>
+               <h2 class="subtitle is-3">Learn from first-principles</h2> 
+            </div>
+
+            <figure class="columns is-mobile is-variable is-0 grid-xl">
+                <div class="column">
+                   <div class="image card">
+                      <a><img src="images/c1.jpg" alt="galaxy one"></a> 
+                   </div> 
+                </div>
+                <div class="column">
+                    <div class="image card">
+                        <a><img src="images/f1.jpg" alt="galaxy one"></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image card">
+                        <a><img src="images/c2.jpg" alt="galaxy one"></a>
+                    </div>
+                </div>
+            </figure>
+            <figcaption class="level">
+                <small class="level-item">
+                    The blog we'll build. Click to continue on Scrimba
+                </small>
+            </figcaption>
+
+            <p>Hello World!</p>
+        </div>
+    </section>
+</body>
+</html>
